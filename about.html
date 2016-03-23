@@ -5,7 +5,8 @@
 <head>
 	<title>О нас</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -23,8 +24,8 @@
 	<h2>Связаться</h2>
 	
 	<form method="GET" action="about.html">
-		<label>Имя</label>
-		<input type="text" name="name" placeholder="Имя"><br/><br/>
+		<label for="name">Имя</label>
+		<input type="text" id="name" name="name" placeholder="Имя"><br/><br/>
 		
 		<label>Почта</label>
 		<input type="text" name="email" placeholder="Почта"><br/><br/>
@@ -32,8 +33,7 @@
 		<label>Сообщение</label>
 		<textarea name="message"></textarea><br/><br/>
 		
-		<button>Отправить</button>
-						
+		<input type="submit" value="Отправить">
 	</form>
 	
 	<footer>
