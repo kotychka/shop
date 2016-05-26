@@ -9,10 +9,13 @@ html, body{
 	padding:0;
 }
 
+<<<<<<< HEAD
 html{
 	font-size: 14px
 }
 
+=======
+>>>>>>> ab1dedd0e2f0b71b9d7e01ddd4c715c0e66c60af
 .wrapper{
 	min-height:100%;
 	margin-bottom:-150px;
@@ -22,11 +25,15 @@ html{
 	height:150px;
 }
 
+<<<<<<< HEAD
 .em-width{
 	font-size: 2rem;
 }
 
 .product{
+=======
+div.product{
+>>>>>>> ab1dedd0e2f0b71b9d7e01ddd4c715c0e66c60af
 		float:left;
 		width:33%;
 }
