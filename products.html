@@ -7,20 +7,143 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/grid.css">
+	<script	  src="https://code.jquery.com/jquery-2.2.4.min.js" 
+			integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/main.js" defer></script>
 </head>
 
 <body>
+	
+	<header>
+		<h1>Shop</h1>
+		<nav>
+			<ul>
+				<li><a href="l-grid3 s-grid6s.html">Продукты</a></li>
+				<li><a href="about.html">О нас</a></li>
+				<li><a href="cart.html">Корзина</a></li>
+			</ul>
+		</nav>
+		<div id="cart">Корзина пуста</div>
+	</header>
 
-	
 	<div class="wrapper">
-		Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32
-		Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.
-		Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.
-		
-		
-	<div class="buffer"></div>
-	
+		<div class="container">
+			<div class="l-grid3 s-grid6">
+				<div class=product>
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/macbook_1-228x228.jpg">
+					<h3>Macbook</h3>
+					<p>Ноутбук</p>
+					<p class="price">$100</p>
+				</div>
+				<div class="button">
+					<button class = "in_cart" data-id="0">В корзину</button>
+				</div>
+			</div>
+			<div class="l-grid3 s-grid6">
+				<div class=product>
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/iphone_1-228x228.jpg">
+					<h3>Iphone</h3>
+					<p>Телефон</p>
+					<p class="price">$20</p>
+				</div>
+				<div class="button">
+					<button class = "in_cart" data-id="1">В корзину</button>
+				</div>
+			</div>
+			<div class="l-grid3 s-grid6">
+				<div class=product>
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/apple_cinema_30-228x228.jpg">
+					<h3>Apple Cinema 30"</h3>
+					<p>Монитор</p>
+					<p class="price">$50</p>
+				</div>
+				<div class="button">
+					<button class = "in_cart" data-id="2">В корзину</button>
+				</div>
+			</div>	
+			<div class="l-grid3 s-grid6">
+				<div class=product>
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/canon_eos_5d_1-228x228.jpg">
+					<h3>Canon 5D</h3>
+					<p>Фотоаппарат</p>
+					<p class="price">$50</p>
+				</div>
+				<div class="button">
+					<button class = "in_cart" data-id="3">В корзину</button>
+				</div>
+			</div>	
+			<div class="l-grid3 s-grid6">
+				<div class=product>
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/samsung_tab_1-228x228.jpg">
+					<h3>Samsung Galaxy Tab</h3>
+					<p>Планшет</p>
+					<p class="price">$250</p>
+				</div>
+				<div class="button">
+					<button class = "in_cart" data-id="4">В корзину</button>
+				</div>
+			</div>	
+			<div class="l-grid3 s-grid6">
+				<div class=product>
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/samsung_syncmaster_941bw-228x228.jpg">
+					<h3>Samsung SyncMaster 941BW</h3>
+					<p>Монитор</p>
+					<p class="price">$50</p>
+				</div>
+				<div class="button">
+					<button class = "in_cart" data-id="5">В корзину</button>
+				</div>
+			</div>	
+			<div class="l-grid3 s-grid6">
+				<div class=product>
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/hp_1-228x228.jpg">
+					<h3>HP LP3065</h3>
+					<p>Ноутбук</p>
+					<p class="price">$50</p>
+				</div>
+				<div class="button">
+					<button class = "in_cart" data-id="6">В корзину</button>
+				</div>
+			</div>	
+			<div class="l-grid3 s-grid6">
+				<div class=product>
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/htc_touch_hd_1-228x228.jpg">
+					<h3>HTC Touch HD</h3>
+					<p>Телефон</p>
+					<p class="price">$50</p>
+				</div>
+				<div class="button">
+					<button class = "in_cart" data-id="7">В корзину</button>
+				</div>
+			</div>	
+			<div class="l-grid3 s-grid6">
+				<div class=product>
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/sony_vaio_1-228x228.jpg">
+					<h3>Sony VAIO</h3>
+					<p>Ноутбук</p>
+					<p class="price">$50</p>
+				</div>
+				<div class="button">
+					<button class = "in_cart" data-id="8">В корзину</button>
+				</div>
+			</div>	
+			<div class="l-grid3 s-grid6">
+				<div class=product>
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/ipod_classic_1-228x228.jpg">
+					<h3>iPod Classic</h3>
+					<p>Плеер</p>
+					<p class="price">$50</p>
+				</div>
+				<div class="button">
+					<button class = "in_cart" data-id="9">В корзину</button>
+				</div>
+			</div>	
+		</div>
 	</div>
+
+	<div class="buffer"></div>
 	
 	<footer>
 		&copy; LevelUp
