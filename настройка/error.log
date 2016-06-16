@@ -1,0 +1,6 @@
+2016/06/09 13:00:12 [emerg] 1579#0: invalid parameter "server" in /etc/nginx/sites-enabled/default:2
+2016/06/09 13:00:12 [emerg] 1580#0: invalid parameter "server" in /etc/nginx/sites-enabled/default:2
+2016/06/09 13:01:52 [emerg] 1587#0: invalid parameter "server" in /etc/nginx/sites-enabled/default:2
+2016/06/09 13:01:52 [emerg] 1588#0: invalid parameter "server" in /etc/nginx/sites-enabled/default:2
+2016/06/09 16:09:32 [emerg] 1956#0: unexpected end of file, expecting ";" or "}" in /etc/nginx/sites-enabled/default:34
+2016/06/09 16:09:32 [emerg] 1957#0: unexpected end of file, expecting ";" or "}" in /etc/nginx/sites-enabled/default:34

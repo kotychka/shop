@@ -1,5 +1,32 @@
 <?php
 
+include "src/Product.php";
+
+$product = new Product();
+
+var_dump($product);
+
+$product->title = "example";
+
+var_dump($product);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $products = array(
 	array(
 		"title" => "Iphone",

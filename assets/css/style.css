@@ -29,13 +29,18 @@ html, body{
 
 .buffer{
 	height:150px;
+	clear: both;
+}
+
+.clear{
+	clear: both;
 }
 
 #cart{
 	float: right;
 }
 
-div.product{
+.product{
 	padding: 5px;
 
 }

@@ -1,3 +1,5 @@
+<?php include session_start() ?>
+
 <?php include 'data.php' ?>
 
 <!DOCTYPE html>
@@ -27,22 +29,34 @@
 				<li><a href="cart.html">Корзина</a></li>
 			</ul>
 		</nav>
+
+		<a href="/toggle.php?currency=0">$</a> | <a href="/toggle.php?currency=1">Р</a>
+
 		<div id="cart">Корзина пуста</div>
 	</header>
+
+	<div class="clear"></div>
 
 	<div class="wrapper">
 		<div class="container">
 
-		<?php foreach ($products as $id => $product) { ?>
+		<?php foreach ($products as $id => $product) {?>
 			<div class="l-grid3 s-grid6">
 				<div class=product>
-					<img src="<?php echo $product["img"] ?> ">
+					<img src="<?php echo $product["img"]?>">
 					<h3>Macbook</h3>
 					<p>Ноутбук</p>
-					<p class="price">$100</p>
+					<span><?php echo $product["price"] ?>
+					<?php if ($_SESSION["currency"] == 0) {
+						echo "$";
+					} else {
+						echo "р";
+					}
+					?>
+					</span>
 				</div>
 				<div class="button">
-					<button class = "in_cart" data-id="<?php echo $id?>">В корзину</button>
+					<a href="/add.php?id=<?php echo $index ?>" class = "in_cart" data-id="<?php echo $id?>">В корзину</a>
 				</div>
 			</div>
 		<?php } ?>

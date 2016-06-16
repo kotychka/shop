@@ -6,6 +6,11 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/grid.css">
+	<script	  src="https://code.jquery.com/jquery-2.2.4.min.js" 
+			integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/main.js" defer></script>	
 </head>
 
 <body>
@@ -18,41 +23,62 @@
 				<li><a href="cart.html">Корзина</a></li>
 			</ul>
 		</nav>
+		<div id="cart">Корзина пуста</div>
 	</header>
 
-	<div>
-		<h2>Топ самых самых</h2>
-		<div class="product l-grid3 s-grid6">
-			<img src="http://demo.opencart.com/image/cache/catalog/demo/macbook_1-200x200.jpg">
-			<h3>Macbook</h3>
-			<p>Самый лучший ноутбук</p>
-			<p class="price">$100</p>
-			<button>В корзину</button>
-		</div>
-		<div class="product l-grid3 s-grid6">
-			<img src="http://demo.opencart.com/image/cache/catalog/demo/iphone_1-200x200.jpg">
-			<h3>Iphone</h3>
-			<p>Самый лучший телефон</p>
-			<p class="price">$20</p>
-			<button>В корзину</button>
-		</div>
-		<div class="product l-grid3 s-grid6">
-			<img src="http://demo.opencart.com/image/cache/catalog/demo/apple_cinema_30-200x200.jpg">
-			<h3>Apple Cinema 30"</h3>
-			<p>Монитор</p>
-			<p class="price">$50</p>
-			<button>В корзину</button>
-		</div>	
-		<div class="product l-grid3 s-grid6">
-			<img src="http://demo.opencart.com/image/cache/catalog/demo/canon_eos_5d_1-200x200.jpg">
-			<h3>Canon 5D</h3>
-			<p>Фотоаппарат</p>
-			<p class="price">$50</p>
-			<button>В корзину</button>
-		</div>	
-		
+	<div class="clear"></div>
 
-	</div>
+	<div class="wrapper">
+		<div class="container">
+			<h2>Топ самых самых</h2>
+			<div class="l-grid3 s-grid6">
+				<div class="product">
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/macbook_1-200x200.jpg">
+					<h3>Macbook</h3>
+					<p>Самый лучший ноутбук</p>
+					<p class="price">$100</p>
+				</div>
+				<div class="button">
+					<a href="#">В корзину</a>
+				</div>
+			</div>
+			<div class="l-grid3 s-grid6">		
+				<div class="product">
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/iphone_1-200x200.jpg">
+					<h3>Iphone</h3>
+					<p>Самый лучший телефон</p>
+					<p class="price">$20</p>
+				</div>
+				<div class="button">
+					<button class = "in_cart" data-id="1">В корзину</button>
+				</div>
+			</div>
+			<div class="l-grid3 s-grid6">
+				<div class="product">
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/apple_cinema_30-200x200.jpg">
+					<h3>Apple Cinema 30"</h3>
+					<p>Монитор</p>
+					<p class="price">$50</p>
+				</div>	
+				<div class="button">
+					<button class = "in_cart" data-id="2">В корзину</button>
+				</div>			
+			</div>
+			<div class="l-grid3 s-grid6">
+				<div class="product">
+					<img src="http://demo.opencart.com/image/cache/catalog/demo/canon_eos_5d_1-200x200.jpg">
+					<h3>Canon 5D</h3>
+					<p>Фотоаппарат</p>
+					<p class="price">$50</p>
+				</div>	
+				<div class="button">
+					<button class = "in_cart" data-id="3">В корзину</button>
+				</div>			
+			</div>
+
+		</div>
+
+	<div class="buffer"></div>
 
 	<footer>
 		&copy; LevelUp
