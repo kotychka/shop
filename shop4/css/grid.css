@@ -1,0 +1,101 @@
+.row {
+    border-bottom: solid 1px transparent;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; /*http://htmlbook.ru/css/box-sizing*/
+    /*Свойства width и height включают в себя значения полей и границ, но не отступов (margin). Эта модель используется браузером Internet Exporer в режиме несовместимости.*/
+}
+
+.row > * {
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row > div {
+    background: #eee;
+    border: 1px solid #aaa;
+}
+
+.coll-1 {
+    width: 10%;
+}
+
+.coll-2 {
+    width: 20%;
+} 
+
+.coll-3 {
+    width: 30%;
+}
+
+.coll-4 {
+    width: 40%;
+}
+
+.coll-5 {
+    width: 50%;
+}
+
+.coll-6 {
+    width: 60%;
+}
+
+.coll-7 {
+    width: 70%;
+}
+
+.coll-8 {
+    width: 80%;
+}
+
+.coll-9 {
+    width: 90%;
+}
+
+.coll-10 {
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .coll-1-m {
+        width: 10%;
+    }
+
+    .coll-2-m {
+        width: 20%;
+    } 
+
+    .coll-3-m {
+        width: 30%;
+    }
+
+    .coll-4-m {
+        width: 40%;
+    }
+
+    .coll-5-m {
+        width: 50%;
+    }
+
+    .coll-6-m {
+        width: 60%;
+    }
+
+    .coll-7-m {
+        width: 70%;
+    }
+
+    .coll-8-m {
+        width: 80%;
+    }
+
+    .coll-9-m {
+        width: 90%;
+    }
+
+    .coll-10-m {
+        width: 100%;
+    }
+}

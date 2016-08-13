@@ -1,0 +1,11 @@
+div.product {
+	width: 20%;
+    float: left;
+    margin-right: 10px;
+    background: #999;
+    padding: 2px;
+}
+
+div.product img{
+	display: block;
+}

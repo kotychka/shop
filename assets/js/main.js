@@ -1,44 +1,37 @@
-var products = [
-	{
-		"title": "iPhone",
-		"price": "300"
-	},
-	{
-		"title": "Android",
-		"price": "250"
-	},
-	{
-		"title": "Phone",
-		"price": "200"
-	}	
-]
-
 $(function () {
-	$(".in_cart").click(function(){
-		console.dir($(this).attr("data-id"));
-
+	$("body").on("click", ".product-link", function() {
 		var id = $(this).attr("data-id");
 
-		if ($("#cart").html() == "Корзина пуста") {
-			$("#cart").html(render(products[id]))
-		} else {
-			$("#cart").append(render(products[id]))
-		}
-	
-	})
-
+		$.ajax({
+			url: "/add.php?id=" + id,
+			success: function (data) {
+				$("#cart").html(data)
+			}
+		});
+	});
 
 	$("body").on("click", ".product-rm", function() {
-		$(this).parent().remove()
+		var id = $(this).attr("data-id");
 
-		if ($(".product-rm").length == 0) {
-			$("#cart").html("Корзина пуста")
-		}
+		$.ajax({
+			url: "/rm.php?id=" + id,
+			success: function (data) {
+				$("#cart").html(data)
+			}
+		});
 	});
+
+	// $("body").on("click", ".product-rm", function() {
+	// 	$(this).parent().remove()
+	// 	if ($("product-rm").lenth == 0) {
+	// 		$("#cart").html("Корзина пуста")
+	// 	}
+	// });
+
 })
 
 function render (product) {
-	var template = "<div>" + product.title + ", Цена " + product.price + " <button class = 'product-rm'>Удалить</button> </div>"
+	var template = "<div>" + product.title + ", Цена " + product.price + " <a class = 'product-rm'>Удалить</a> </div>"
 
 	return template
 }

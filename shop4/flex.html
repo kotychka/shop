@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+
+    @media screen and (max-width: 1024px) {
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            align-items: stretch;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 960px;
+            align-items: stretch;
+        }
+    }
+
+        .flex-block {
+            border: 1px solid red;
+            width: 120px;
+        }
+
+        .block-1 {
+            height: 20px;
+            background: #f00;
+        }
+
+        .block-2 {
+            height: 30px;
+            background: #0f0;
+        }
+
+        .block-3 {
+            height: 40px;
+            background: #00f;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-block block-1">item1</div>
+        <div class="flex-block block-2">item2</div>
+        <div class="flex-block block-3">item3</div>
+    </div>
+</body>
+</html>

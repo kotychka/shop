@@ -1,0 +1,11 @@
+ul li {
+	display: inline;
+}
+
+.header-nav a {
+	color: #0f0;
+}
+
+.footer-nav a {
+	color: #f00;
+}

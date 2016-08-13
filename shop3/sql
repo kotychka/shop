@@ -1,0 +1,20 @@
+CREATE TABLE `products` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(254) NOT NULL,
+  `description` text NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `created_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8
+
+INSERT INTO `products` (title, description, price, created_at) VALUES("example2", "example descriptio2", 97.99, "2016-04-21 22:21:00");
+
+SELECT id, title, price FROM products WHERE id = 2;
+
+UPDATE products SET price = 50.00;
+
+UPDATE products SET price = 101.00 WHERE id = 2;
+
+SELECT * FROM products;
+
+DELETE FROM products WHERE id = 1;

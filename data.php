@@ -1,80 +1,24 @@
 <?php
 
-include "src/Product.php";
-
-$product = new Product();
-
-var_dump($product);
-
-$product->title = "example";
-
-var_dump($product);
+include "src/ProductInterface.php";
+include "src/Phone.php";
+include "src/Notebook.php";
 
 
+// $product = new Phone("example!", 100);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// var_dump($product->price());
 
 $products = array(
-	array(
-		"title" => "Iphone",
-		"price" => "350",
-		"img" => "http://demo.opencart.com/image/cache/catalog/demo/iphone_1-228x228.jpg"
-	),
-	array(
-		"title" => "Phone",
-		"price" => "300",
-		"img" => "http://demo.opencart.com/image/cache/catalog/demo/htc_touch_hd_1-228x228.jpg"
-	),
-	array(
-		"title" => "Ipod",
-		"price" => "50",
-		"img" => "http://demo.opencart.com/image/cache/catalog/demo/ipod_classic_1-228x228.jpg"
-	),
-	array(
-		"title" => "Iphone",
-		"price" => "350",
-		"img" => "http://demo.opencart.com/image/cache/catalog/demo/iphone_1-228x228.jpg"
-	),
-	array(
-		"title" => "Phone",
-		"price" => "300",
-		"img" => "http://demo.opencart.com/image/cache/catalog/demo/htc_touch_hd_1-228x228.jpg"
-	),
-	array(
-		"title" => "Ipod",
-		"price" => "50",
-		"img" => "http://demo.opencart.com/image/cache/catalog/demo/ipod_classic_1-228x228.jpg"
-	),
-	array(
-		"title" => "Iphone",
-		"price" => "350",
-		"img" => "http://demo.opencart.com/image/cache/catalog/demo/iphone_1-228x228.jpg"
-	),
-	array(
-		"title" => "Phone",
-		"price" => "300",
-		"img" => "http://demo.opencart.com/image/cache/catalog/demo/htc_touch_hd_1-228x228.jpg"
-	),
-	array(
-		"title" => "Ipod",
-		"price" => "50",
-		"img" => "http://demo.opencart.com/image/cache/catalog/demo/ipod_classic_1-228x228.jpg"
-	),
-
-
+	new Phone("example", 100),
+	new Phone("example2", 101),
+	new Phone("example3", 102),
+	new Phone("example", 100),
+	new Phone("example2", 101),
+	new Phone("example3", 102),
+	new Phone("example", 100),
+	new Phone("example2", 101),
 );
+
 
 ?>

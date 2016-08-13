@@ -1,0 +1,21 @@
+server {
+	listen 8080 default_server;
+
+	root /vagrant/shop;
+	index index.html index.htm;
+
+	server_name localhost;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+
+	location ~ \.php$ {
+	#	fastcgi_split_path_info ^(.+\.php)(/.+)$;
+	#	fastcgi_pass 127.0.0.1:9000;
+
+		fastcgi_pass unix:/var/run/php5-fpm.sock;
+		fastcgi_index index.php;
+		include fastcgi_params;
+	}
+}

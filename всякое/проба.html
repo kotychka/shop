@@ -1,0 +1,13 @@
+		<?php foreach ($products as $id => $product) { ?>
+			<div class="l-grid3 s-grid6">
+				<div class=product>
+					<img src="<?php $product["img"] ?> ">
+					<h3>Macbook</h3>
+					<p>Ноутбук</p>
+					<p class="price">$100</p>
+				</div>
+				<div class="button">
+					<button class = "in_cart" data-id="<?php $id?>">В корзину</button>
+				</div>
+			</div>
+		<?php } ?>

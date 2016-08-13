@@ -1,0 +1,15 @@
+{
+	"articles": [
+
+		{
+			"title": "Lorem impsum",
+			"description": "Lorem description"
+		},
+
+		{
+			"title": "Example",
+			"description": "Example description"
+		}
+
+	]
+}
